@@ -29,12 +29,12 @@ const Navbar = () => {
             </div>
             <div className='flex flex-col lg:flex-row gap-[30px]'>
                 <Link href='/' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>Home</Link>
-                <Link href='/add_listings' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>All Events</Link>
+                <Link href='/events' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>All Events</Link>
                 {
                     session && (
                         <>
-                            <Link href='/my_listings' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>Add Event</Link>
-                            <Link href='/my_orders' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>Manage Event</Link>
+                            <Link href='/add_event' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>Add Event</Link>
+                            <Link href='/manage_event' className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500'>Manage Event</Link>
                         </>
                     )
                 }

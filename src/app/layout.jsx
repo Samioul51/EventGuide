@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Providers from "./Providers";
 import { Toaster } from "react-hot-toast";
+import { Suspense } from "react";
+import Loading from "./Components/Loading";
 
 const geistSans = Geist({ subsets: ["latin"], display: "swap", variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({ subsets: ["latin"], display: "swap", variable: "--font-geist-mono" });
@@ -21,9 +23,13 @@ export default function RootLayout({ children }) {
       >
         <Toaster position="top-right" />
         <Providers>
+
           <Navbar></Navbar>
-          {children}
+          <Suspense fallback={<Loading></Loading>}>
+            {children}
+          </Suspense>
           <Footer></Footer>
+
         </Providers>
 
       </body>
