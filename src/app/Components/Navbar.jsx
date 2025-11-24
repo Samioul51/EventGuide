@@ -21,7 +21,7 @@ const Navbar = () => {
     const handleCloseModal = () => setModalOpen(false);
 
     return (
-        <div className='flex flex-col items-center lg:justify-between lg:flex-row px-[30px] gap-[10px] lg:gap-0 py-[20px] box-border inter shadow-lg'>
+        <div className='bg-white flex flex-col items-center lg:justify-between lg:flex-row px-[30px] gap-[10px] lg:gap-0 py-[20px] box-border inter shadow-lg sticky top-0 z-50'>
             <div>
                 <Link className='text-center text-3xl font-bold text-[#D84437] ' href='/'>
                     EventGuide
