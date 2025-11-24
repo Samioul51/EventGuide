@@ -1,4 +1,3 @@
-import p from 'next/link';
 import React from 'react';
 import { FaXTwitter, FaFacebook, FaLinkedin } from "react-icons/fa6";
 
