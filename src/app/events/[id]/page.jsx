@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 const EventPage = async ({ params }) => {
     const { id } = await params;
@@ -39,7 +40,7 @@ const EventPage = async ({ params }) => {
                         <div>
                             <p className='font-bold text-xl text-green-700 mb-[8px]'>PRICE: {price}</p>
                         </div>
-
+                        <Link href="/events" className="btn btn-neutral mt-4 border-none bg-linear-to-r from-[#0047ab] to-[#1ca9c9] hover:from-[#D84437] hover:to-[#ff6b6b] ease-in transition duration-500">EXPLORE OTHER EVENTS</Link>
                     </div>
                 </div>
             </div>

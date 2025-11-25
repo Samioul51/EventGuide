@@ -1,11 +1,9 @@
+"use client";
 import React from 'react';
+import AddEvent from '../Components/AddEvent';
 
-const AddEvent = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const AddNewEvent = () => {
+    return <AddEvent></AddEvent>;
 };
 
-export default AddEvent;
+export default AddNewEvent;
