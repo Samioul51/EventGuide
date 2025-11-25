@@ -68,7 +68,7 @@ const AddEvent = () => {
                         <input
                             type="text"
                             name="title"
-                            className="input input-bordered w-full"
+                            className="input input-bordered w-full text-black"
                             value={title}
                             onChange={(e) => setTitle(e.target.value)}
                             required
@@ -81,7 +81,7 @@ const AddEvent = () => {
                         <textarea
                             type="text"
                             name="shortDescription"
-                            className="input input-bordered w-full resize-none"
+                            className="input input-bordered w-full resize-none text-black"
                             value={shortDescription}
                             onChange={(e) => setShortDescription(e.target.value)}
                             required
@@ -94,7 +94,7 @@ const AddEvent = () => {
                         <textarea
                             type="text"
                             name="fullDescription"
-                            className="input input-bordered w-full resize-none"
+                            className="input input-bordered w-full resize-none text-black"
                             value={fullDescription}
                             onChange={(e) => setFullDescription(e.target.value)}
                             required
@@ -123,7 +123,7 @@ const AddEvent = () => {
                         <input
                             type="date"
                             name="date"
-                            className="input input-bordered w-full"
+                            className="input input-bordered w-full text-black"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
                             required
@@ -136,7 +136,7 @@ const AddEvent = () => {
                         </label>
                         <select
                             name="priority"
-                            className="select select-bordered w-full"
+                            className="select select-bordered w-full text-black"
                             value={priority}
                             onChange={(e) => setPriority(e.target.value)}
                             required
@@ -154,7 +154,7 @@ const AddEvent = () => {
                         </label>
                         <select
                             name="category"
-                            className="select select-bordered w-full"
+                            className="select select-bordered w-full text-black"
                             value={category}
                             onChange={(e) => setCategory(e.target.value)}
                             required
@@ -178,7 +178,7 @@ const AddEvent = () => {
                         <input
                             type="text"
                             name="location"
-                            className="input input-bordered w-full"
+                            className="input input-bordered w-full text-black"
                             value={location}
                             onChange={(e) => setLocation(e.target.value)}
                             required
@@ -192,7 +192,7 @@ const AddEvent = () => {
                         <input
                             type="text"
                             name="image"
-                            className="input input-bordered w-full"
+                            className="input input-bordered w-full text-black"
                             value={image}
                             onChange={(e) => setImage(e.target.value)}
                             required
@@ -208,7 +208,7 @@ const AddEvent = () => {
                             name="email"
                             value={session?.user?.email || ""}
                             readOnly
-                            className="input input-bordered w-full"
+                            className="input input-bordered w-full text-black"
                             required
                         />
                     </div>

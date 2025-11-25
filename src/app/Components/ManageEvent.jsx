@@ -187,7 +187,7 @@ const ManageEvent = () => {
                                     type="text"
                                     defaultValue={editingEvent?.title}
                                     name="title"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 
@@ -200,7 +200,7 @@ const ManageEvent = () => {
                                     defaultValue={editingEvent?.category}
                                     readOnly
                                     name="category"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 
@@ -212,7 +212,7 @@ const ManageEvent = () => {
                                     type="text"
                                     defaultValue={editingEvent?.price}
                                     name="price"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                     min={0}
                                 />
                             </div>
@@ -225,7 +225,7 @@ const ManageEvent = () => {
                                     type="text"
                                     defaultValue={editingEvent?.location}
                                     name="location"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 
@@ -237,7 +237,7 @@ const ManageEvent = () => {
                                     type="text"
                                     defaultValue={editingEvent?.shortDescription}
                                     name="shortDescription"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 
@@ -249,7 +249,7 @@ const ManageEvent = () => {
                                     type="text"
                                     defaultValue={editingEvent?.image}
                                     name="image"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 
@@ -262,7 +262,7 @@ const ManageEvent = () => {
                                     defaultValue={session?.user?.name}
                                     readOnly
                                     name="organizer"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 
@@ -275,7 +275,7 @@ const ManageEvent = () => {
                                     defaultValue={session?.user?.email}
                                     readOnly
                                     name="email"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
                             <div className="form-control mb-2">
@@ -287,7 +287,7 @@ const ManageEvent = () => {
                                     defaultValue={editingEvent?.date}
                                     readOnly
                                     name="date"
-                                    className="input input-bordered w-full"
+                                    className="input input-bordered w-full text-black"
                                 />
                             </div>
 

@@ -99,20 +99,20 @@ const Register = () => {
                             <form onSubmit={handleRegister} className="w-full card-body">
                                 <fieldset className="fieldset">
                                     <label className="name text-black">Name</label>
-                                    <input name="name" type="text" className="input" placeholder="Name" required
+                                    <input name="name" type="text" className="input text-black" placeholder="Name" required
                                         value={name}
                                         onChange={(e) => setName(e.target.value)} />
                                     <label className="email text-black">Email</label>
-                                    <input name="email" type="email" className="input" placeholder="Email" required
+                                    <input name="email" type="email" className="input text-black" placeholder="Email" required
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)} />
 
                                     <label className="photo text-black">Photo URL</label>
-                                    <input name="photo" type="url" className="input" placeholder="Photo URL" required
+                                    <input name="photo" type="url" className="input text-black" placeholder="Photo URL" required
                                         value={photoURL}
                                         onChange={(e) => setPhotoURL(e.target.value)} />
                                     <label className="password text-black">Password</label>
-                                    <input name="password" type="password" className="input" placeholder="Password" required
+                                    <input name="password" type="password" className="input text-black" placeholder="Password" required
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)} />
                                     {
