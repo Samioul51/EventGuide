@@ -1,20 +1,27 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import toast, { Toaster } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { signIn } from 'next-auth/react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useSession } from 'next-auth/react';
 
 const Register = () => {
+    const { data: session } = useSession();
     const router = useRouter();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [photoURL, setPhotoURL] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+
+    useEffect(() => {
+        if (session) 
+            router.push("/");
+    }, [session, router]);
 
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
@@ -43,7 +50,7 @@ const Register = () => {
 
             const data = await res.json();
             if (res.ok) {
-                
+
                 const login = await signIn("credentials", {
                     redirect: false,
                     email,
@@ -52,7 +59,7 @@ const Register = () => {
 
                 if (login?.error)
                     toast.error(login.error);
-                else{
+                else {
                     toast.success("Registered successfully!");
                     router.push("/");
                 }

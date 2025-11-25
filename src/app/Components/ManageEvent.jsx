@@ -1,6 +1,7 @@
 "use client";
 import { useSession } from 'next-auth/react';
 import Head from 'next/head';
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react';
 import Swal from 'sweetalert2';
 
@@ -10,6 +11,11 @@ const ManageEvent = () => {
     const [editingEvent, setEditingEvent] = useState(null);
     const orderModalRef = useRef(null);
     const {data:session}=useSession();
+    const router = useRouter();
+    useEffect(() => {
+            if (!session)
+                router.push("/");
+        },[session,router]);
 
     useEffect(() => {
         fetch("http://localhost:3000/events")

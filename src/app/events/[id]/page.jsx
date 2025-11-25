@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const EventPage = async ({ params }) => {
     const { id } = await params;
-
+    
     const res = await fetch(`http://localhost:3000/events/${id}`, {
         cache: "no-store",
     });

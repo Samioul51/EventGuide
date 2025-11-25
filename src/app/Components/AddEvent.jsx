@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
 const AddEvent = () => {
-    const {data:session}=useSession();
+    const { data: session } = useSession();
     const router = useRouter();
     const [title, setTitle] = useState("");
     const [shortDescription, setShortDescription] = useState("");
@@ -18,12 +18,15 @@ const AddEvent = () => {
     const [category, setCategory] = useState("");
     const [location, setLocation] = useState("");
     const [image, setImage] = useState("");
-    const [email,setEmail]=useState(session?.user?.email);
-
+    const [email, setEmail] = useState(session?.user?.email);
+    useEffect(() => {
+        if (!session)
+            router.push("/");
+    }, [session, router]);
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const newEvent={
+        const newEvent = {
             title,
             shortDescription,
             fullDescription,
@@ -36,19 +39,19 @@ const AddEvent = () => {
             email,
         };
 
-        try{
-            const res=await fetch("http://localhost:3000/events",{
-                method:"POST",
-                headers:{"Content-Type":"application/json"},
-                body:JSON.stringify(newEvent),
+        try {
+            const res = await fetch("http://localhost:3000/events", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(newEvent),
             });
-            if(!res.ok)
+            if (!res.ok)
                 throw new Error("Failed to add event");
             else
                 toast.success("Event added successfully!");
             router.push("/");
         }
-        catch(error){
+        catch (error) {
             toast.error("Error adding event");
         }
     }

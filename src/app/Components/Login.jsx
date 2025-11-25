@@ -15,10 +15,8 @@ const Login = () => {
     const [password,setPassword]=useState("");
 
     useEffect(() => {
-        if (session){
-            toast.success("Logged in with Google");
+        if (session)
             router.push("/");
-        }
     },[session,router]);
 
     const handleLogin=async(e)=>{
