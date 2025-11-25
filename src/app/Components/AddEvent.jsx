@@ -110,7 +110,7 @@ const AddEvent = () => {
                             name="price"
                             value={price}
                             onChange={(e) => setPrice(e.target.value)}
-                            className="input input-bordered w-full"
+                            className="input input-bordered w-full text-black"
                             min={0}
                             required
                         />

@@ -149,16 +149,16 @@ const ManageEvent = () => {
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td className='text-black'>
                                                 {list.title}
                                             </td>
-                                            <td>
+                                            <td className='text-black'>
                                                 {list.category}
                                             </td>
-                                            <td>{list.price}</td>
-                                            <td>{list.location}</td>
-                                            <td>{list.shortDescription}</td>
-                                            <td>{list.date}</td>
+                                            <td className='text-black'>{list.price}</td>
+                                            <td className='text-black'>{list.location}</td>
+                                            <td className='text-black'>{list.shortDescription}</td>
+                                            <td className='text-black'>{list.date}</td>
                                             <td className='flex flex-col'>
                                                 <button onClick={() => handleModalOpen(list)} type="submit" className="btn btn-neutral mt-4 border-none bg-linear-to-r from-[#0047ab] to-[#1ca9c9] hover:from-[#D84437] hover:to-[#ff6b6b] ease-in transition duration-500">
                                                     Edit
@@ -176,12 +176,12 @@ const ManageEvent = () => {
                 </div>
                 <dialog ref={orderModalRef} className="modal modal-bottom sm:modal-middle">
                     <div className="modal-box">
-                        <h3 className="font-bold text-lg mb-4">UPDATE INFORMATION</h3>
+                        <h3 className="font-bold text-lg mb-4 text-black">UPDATE INFORMATION</h3>
                         <form onSubmit={handleSubmit}>
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Name</span>
+                                    <span className="label-text text-black">Name</span>
                                 </label>
                                 <input
                                     type="text"
@@ -193,7 +193,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Category</span>
+                                    <span className="label-text text-black">Category</span>
                                 </label>
                                 <input
                                     type="text"
@@ -206,7 +206,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Price</span>
+                                    <span className="label-text text-black">Price</span>
                                 </label>
                                 <input
                                     type="text"
@@ -219,7 +219,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Location</span>
+                                    <span className="label-text text-black">Location</span>
                                 </label>
                                 <input
                                     type="text"
@@ -231,7 +231,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Description</span>
+                                    <span className="label-text text-black">Description</span>
                                 </label>
                                 <input
                                     type="text"
@@ -243,7 +243,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Image URL</span>
+                                    <span className="label-text text-black">Image URL</span>
                                 </label>
                                 <input
                                     type="text"
@@ -255,7 +255,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Organizer Name</span>
+                                    <span className="label-text text-black">Organizer Name</span>
                                 </label>
                                 <input
                                     type="text"
@@ -268,7 +268,7 @@ const ManageEvent = () => {
 
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Organizer Email</span>
+                                    <span className="label-text text-black">Organizer Email</span>
                                 </label>
                                 <input
                                     type="text"
@@ -280,7 +280,7 @@ const ManageEvent = () => {
                             </div>
                             <div className="form-control mb-2">
                                 <label className="label">
-                                    <span className="label-text">Date</span>
+                                    <span className="label-text text-black">Date</span>
                                 </label>
                                 <input
                                     type="text"
