@@ -46,7 +46,7 @@ const Navbar = () => {
                 {
                     session ? (
                         <>
-                            <div><img src={session.user.photoURL} className="w-[40px] h-[40px] rounded-[50%]" /></div>
+                            <div><img src={session.user.image || session.user.photoURL} className="w-[40px] h-[40px] rounded-[50%]" /></div>
                             <button onClick={handleOpenModal} className='text-center font-bold bg-linear-to-r from-[#0047ab] to-[#1ca9c9] bg-clip-text text-transparent hover:text-[#D84437] ease duration-500 cursor-pointer'>Logout</button>
                         </>
                     ) : (

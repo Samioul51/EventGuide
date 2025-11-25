@@ -13,7 +13,7 @@ const Events = () => {
             <Head><title>{`EventGuide | All Events`}</title></Head>
             <div className='bg-[#6897ff] py-[50px]'>
 
-                <p className='text-center text-[32px] font-bold mb-[30px]'>ALL EVENTS</p>
+                <p className='text-center text-[32px] font-bold mb-[30px] text-black'>ALL EVENTS</p>
 
                 <div className='w-full max-w-[1440px] h-auto grid grid-cols-1 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-[50px] px-[40px] pb-[50px] box-border'>
 

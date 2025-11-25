@@ -7,8 +7,9 @@ import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import Loading from "./Components/Loading";
 
-const geistSans = Geist({ subsets: ["latin"], display: "swap", variable: "--font-geist-sans" });
-const geistMono = Geist_Mono({ subsets: ["latin"], display: "swap", variable: "--font-geist-mono" });
+const geistSans = Geist({ subsets: ["latin"], display: "optional", variable: "--font-geist-sans", preload: true });
+const geistMono = Geist_Mono({ subsets: ["latin"], display: "optional", variable: "--font-geist-mono", preload: true });
+
 
 export const metadata = {
   title: "EventGuide",
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`antialiased ${geistSans.className} ${geistMono.className}`}
+        className={`antialiased ${geistSans.className} ${geistMono.className} text-black`}
       >
         <Toaster position="top-right" />
         <Providers>

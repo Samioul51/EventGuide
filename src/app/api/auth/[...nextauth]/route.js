@@ -30,6 +30,7 @@ const authOptions = {
             id: user.uid,
             name: user.displayName,
             email: user.email,
+            image: user.photoURL
           };
         } catch (error) {
           throw new Error("Invalid email or password");

@@ -59,11 +59,11 @@ const AddEvent = () => {
         <><Head><title>{`EventGuide | Add Event`}</title></Head>
             <div className='w-full bg-[#6897ff] py-[50px]'>
 
-                <p className='text-center text-[32px] font-bold mb-[10px]'>ADD EVENT</p>
+                <p className='text-center text-[32px] font-bold mb-[10px] text-black'>ADD EVENT</p>
                 <form className='w-full max-w-[1440px] h-auto mx-auto bg-white p-[50px] rounded-[10px]' onSubmit={handleSubmit}>
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Event Name</span>
+                            <span className="label-text text-black">Event Name</span>
                         </label>
                         <input
                             type="text"
@@ -76,7 +76,7 @@ const AddEvent = () => {
                     </div>
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Short description</span>
+                            <span className="label-text text-black">Short description</span>
                         </label>
                         <textarea
                             type="text"
@@ -89,7 +89,7 @@ const AddEvent = () => {
                     </div>
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Full description</span>
+                            <span className="label-text text-black">Full description</span>
                         </label>
                         <textarea
                             type="text"
@@ -103,7 +103,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Price</span>
+                            <span className="label-text text-black">Price</span>
                         </label>
                         <input
                             type="number"
@@ -118,7 +118,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Date</span>
+                            <span className="label-text text-black">Date</span>
                         </label>
                         <input
                             type="date"
@@ -132,7 +132,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Priority</span>
+                            <span className="label-text text-black">Priority</span>
                         </label>
                         <select
                             name="priority"
@@ -150,7 +150,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Category</span>
+                            <span className="label-text text-black">Category</span>
                         </label>
                         <select
                             name="category"
@@ -173,7 +173,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Location</span>
+                            <span className="label-text text-black">Location</span>
                         </label>
                         <input
                             type="text"
@@ -187,7 +187,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Image URL</span>
+                            <span className="label-text text-black">Image URL</span>
                         </label>
                         <input
                             type="text"
@@ -201,7 +201,7 @@ const AddEvent = () => {
 
                     <div className="form-control mb-2">
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text text-black">Email</span>
                         </label>
                         <input
                             type="email"

@@ -116,7 +116,7 @@ const ManageEvent = () => {
             <Head><title>{`EventGuide | My Events`}</title></Head>
             <div className='bg-[#6897ff] py-[50px]'>
                 
-                <p className='text-center text-[32px] font-bold mb-[10px]'>MY LISTINGS</p>
+                <p className='text-center text-[32px] font-bold mb-[10px] text-black'>MY LISTINGS</p>
                 <div className='w-full max-w-[1440px] h-auto mx-auto bg-white p-[50px] rounded-[10px]'>
                     <div className="overflow-x-auto">
                         <table className="table">

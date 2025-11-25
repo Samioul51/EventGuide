@@ -51,16 +51,16 @@ const Login = () => {
             <div className='w-full bg-[#6897ff]'>
                 <div className="hero bg-[#6897ff] min-h-screen w-full max-w-[500px] mx-auto">
                     <div className="w-full hero-content flex-col">
-                        <p className='text-center text-[32px] font-bold mb-[10px]'>LOGIN</p>
+                        <p className='text-center text-[32px] font-bold mb-[10px] text-black'>LOGIN</p>
                         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form onSubmit={handleLogin} className="w-full card-body">
                                 <fieldset className="fieldset ">
-                                    <label className="email">Email</label>
+                                    <label className="email text-black">Email</label>
                                     <input name="email" type="email" className="input" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                                    <label className="password">Password</label>
+                                    <label className="password text-black">Password</label>
                                     <input name="password" type="password" className="input" placeholder="Password" required value={password}
   onChange={(e) => setPassword(e.target.value)} />
-                                    <div className='w-full max-w-[320px]'>
+                                    <div className='w-full max-w-[320px] text-black'>
                                         Don't have an account? <Link href="/register" className="link link-hover text-[#0047ab]">Register</Link> here
                                     </div>
                                     <button type="submit" className="btn btn-neutral mt-4 border-none bg-linear-to-r from-[#0047ab] to-[#1ca9c9] hover:from-[#D84437] hover:to-[#ff6b6b] ease-in transition duration-500">Login</button>

@@ -94,31 +94,31 @@ const Register = () => {
 
                 <div className="hero bg-[#6897ff] min-h-screen w-full max-w-[500px] mx-auto">
                     <div className="w-full hero-content flex-col">
-                        <p className='text-center text-[32px] font-bold mb-[10px]'>REGISTER</p>
+                        <p className='text-center text-[32px] font-bold mb-[10px] text-black'>REGISTER</p>
                         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form onSubmit={handleRegister} className="w-full card-body">
                                 <fieldset className="fieldset">
-                                    <label className="name">Name</label>
+                                    <label className="name text-black">Name</label>
                                     <input name="name" type="text" className="input" placeholder="Name" required
                                         value={name}
                                         onChange={(e) => setName(e.target.value)} />
-                                    <label className="email">Email</label>
+                                    <label className="email text-black">Email</label>
                                     <input name="email" type="email" className="input" placeholder="Email" required
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)} />
 
-                                    <label className="photo">Photo URL</label>
+                                    <label className="photo text-black">Photo URL</label>
                                     <input name="photo" type="url" className="input" placeholder="Photo URL" required
                                         value={photoURL}
                                         onChange={(e) => setPhotoURL(e.target.value)} />
-                                    <label className="password">Password</label>
+                                    <label className="password text-black">Password</label>
                                     <input name="password" type="password" className="input" placeholder="Password" required
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)} />
                                     {
                                         error && <p className='text-xs text-red-500'>{error}</p>
                                     }
-                                    <div>Already have an account?
+                                    <div className=' text-black'>Already have an account?
                                         <Link href="/login" className="link link-hover text-[#0047ab]"> Login</Link> here
                                     </div>
                                     <button type="submit" className="btn btn-neutral mt-4 border-none bg-linear-to-r from-[#0047ab] to-[#1ca9c9] hover:from-[#D84437] hover:to-[#ff6b6b] ease-in transition duration-500">Register</button>
