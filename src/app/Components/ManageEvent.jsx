@@ -137,7 +137,7 @@ const ManageEvent = () => {
                                 {
                                     myData.map((list, index) => (
                                         <tr key={list._id}>
-                                            <td>{index + 1}</td>
+                                            <td className='text-black'>{index + 1}</td>
                                             <td>
                                                 <div className="flex items-center gap-3">
                                                     <div className="avatar">
