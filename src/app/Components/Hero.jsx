@@ -30,9 +30,9 @@ const Hero = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide><Image src={a} className='w-full max-w-full h-full max-h-[650px]'/></SwiperSlide>
-                <SwiperSlide><Image src={b} className='w-full max-w-full h-full max-h-[650px]'/></SwiperSlide>
-                <SwiperSlide><Image src={c} className='w-full max-w-full h-full max-h-[650px]'/></SwiperSlide>
+                <SwiperSlide><Image alt="Slide 1" src={a} className='w-full max-w-full h-full max-h-[650px]'/></SwiperSlide>
+                <SwiperSlide><Image alt="Slide 2" src={b} className='w-full max-w-full h-full max-h-[650px]'/></SwiperSlide>
+                <SwiperSlide><Image alt="Slide 3" src={c} className='w-full max-w-full h-full max-h-[650px]'/></SwiperSlide>
             </Swiper>
         </>
     );

@@ -4,7 +4,7 @@ import Even from "./Components/Even";
 import { use } from "react";
 
 
-const eventsPromise = fetch("http://localhost:3000/events").then(res => res.json());
+const eventsPromise = fetch("https://event-guide-server.vercel.app/events").then(res => res.json());
 
 
 export default function Home() {

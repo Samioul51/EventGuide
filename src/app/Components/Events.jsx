@@ -3,7 +3,7 @@ import React, { use } from 'react';
 import { IoIosArrowDropdownCircle } from 'react-icons/io';
 import Even from '../Components/Even';
 
-const eventsPromise = fetch("http://localhost:3000/events").then(res => res.json());
+const eventsPromise = fetch("https://event-guide-server.vercel.app/events").then(res => res.json());
 const Events = () => {
     const eventsData = use(eventsPromise);
     // console.log(category.data);

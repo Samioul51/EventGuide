@@ -18,7 +18,7 @@ const ManageEvent = () => {
         },[session,router]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/events")
+        fetch("https://event-guide-server.vercel.app/events")
             .then(res => res.json())
             .then(data => {
                 setEvents(data.data);
@@ -49,7 +49,7 @@ const ManageEvent = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:3000/events/${_id}`, {
+                fetch(`https://event-guide-server.vercel.app/events/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -89,7 +89,7 @@ const ManageEvent = () => {
             date: form.date.value
         }
 
-        fetch(`http://localhost:3000/events/${editingEvent._id}`, {
+        fetch(`https://event-guide-server.vercel.app/events/${editingEvent._id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
